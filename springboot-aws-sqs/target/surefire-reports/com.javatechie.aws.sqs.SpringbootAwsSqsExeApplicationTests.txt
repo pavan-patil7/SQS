@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: com.javatechie.aws.sqs.SpringbootAwsSqsExeApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 8.994 s <<< FAILURE! - in com.javatechie.aws.sqs.SpringbootAwsSqsExeApplicationTests
+contextLoads  Time elapsed: 0.016 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'simpleMessageListenerContainer' defined in class path resource [org/springframework/cloud/aws/messaging/config/annotation/SqsConfiguration.class]: Invocation of init method failed; nested exception is com.amazonaws.services.sqs.model.AmazonSQSException: The security token included in the request is invalid. (Service: AmazonSQS; Status Code: 403; Error Code: InvalidClientTokenId; Request ID: 007f9d5a-2606-56de-8b5c-c35bd9d3026e)
+Caused by: com.amazonaws.services.sqs.model.AmazonSQSException: The security token included in the request is invalid. (Service: AmazonSQS; Status Code: 403; Error Code: InvalidClientTokenId; Request ID: 007f9d5a-2606-56de-8b5c-c35bd9d3026e)
+

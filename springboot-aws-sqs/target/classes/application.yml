@@ -1,0 +1,10 @@
+cloud:
+  aws:
+    region:
+      static: ap-south-1
+      auto: false
+    credentials:
+      access-key: AKIASVCG37WFJ4PAUW74
+      secret-key: 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
+    end-point:
+      uri: https://sqs.ap-south-1.amazonaws.com/182684745098/emailQueue
